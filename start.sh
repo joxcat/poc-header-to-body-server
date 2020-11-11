@@ -7,4 +7,4 @@ if [[ ! -f "./target/release/simple-server" ]]; then
   echo "Building"
   cargo build --release
 fi
-./target/release/simple-server >> simple-server.log 2>&1
+./target/release/simple-server >> simple-server.log 2>&1 &
